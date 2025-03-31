@@ -1,0 +1,2 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){console.log("侧边栏初始化");var e=document.querySelector(".linkedin-booster-close");e&&e.addEventListener("click",(function(){console.log("关闭侧边栏"),chrome.runtime.sendMessage({action:"closeSidePanel"})}));var n=document.getElementById("extract-candidates"),t=document.getElementById("batch-connect");n&&n.addEventListener("click",(function(){console.log("提取候选人信息")})),t&&t.addEventListener("click",(function(){console.log("批量发送连接请求")}))}))})();
+//# sourceMappingURL=sidepanel.js.map

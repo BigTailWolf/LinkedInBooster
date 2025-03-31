@@ -1,19 +1,28 @@
 {
-  "name": "sidebar-extension",
+  "name": "linkedin-booster",
   "version": "1.0.0",
-  "description": "A Chrome extension with a sidebar",
+  "description": "LinkedIn Booster Chrome Extension",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "watch": "webpack --config webpack.config.js --watch"
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "dev": "webpack --mode development",
+    "type-check": "tsc --noEmit"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^1.6.7"
+  },
   "devDependencies": {
     "@types/chrome": "^0.0.260",
+    "@types/node": "^20.11.19",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.11.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sharp": "^0.33.5",
+    "style-loader": "^3.3.4",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
-    "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4",
-    "css-loader": "^6.10.0",
-    "style-loader": "^3.3.4"
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
   }
-} 
+}
