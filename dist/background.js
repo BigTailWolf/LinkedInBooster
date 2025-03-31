@@ -1,2 +1,0 @@
-(()=>{"use strict";chrome.runtime.onInstalled.addListener((function(){console.log("Extension installed")})),chrome.action.onClicked.addListener((function(e){console.log("扩展图标被点击"),e.id&&chrome.sidePanel.open({windowId:e.windowId})})),chrome.runtime.onMessage.addListener((function(e,n,o){"closeSidePanel"===e.action&&(console.log("关闭侧边栏"),chrome.tabs.sendMessage(n.tab.id,{action:"showCloseMessage"}))}))})();
-//# sourceMappingURL=background.js.map
